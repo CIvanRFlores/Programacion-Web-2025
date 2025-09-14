@@ -28,7 +28,7 @@ p
 .tittle-container
 {
     display: block;
-    background-image: url(/Ejercicio_02/img/Backyardpng.png);
+    background-image: url(./img/Backyardpng.png);
     border: 8px solid #D2D0BA;
     width: 97%;
     height: 55px;

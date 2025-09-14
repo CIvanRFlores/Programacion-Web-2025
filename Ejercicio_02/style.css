@@ -1,0 +1,80 @@
+body
+{
+    background-color: #5E747F;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 44px;
+    font-family: Roboto, sans-serif;
+    margin-top: 0px;
+    text-shadow: 1px 1px 10px black;
+}
+
+h2
+{
+    font-family: Tahoma;
+}
+
+p
+{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.tittle-container
+{
+    display: block;
+    background-image: url(/Ejercicio_02/img/Backyardpng.png);
+    border: 8px solid #D2D0BA;
+    width: 97%;
+    height: 55px;
+    padding: 15px;
+}
+
+.card-container
+{
+    text-align: center;
+    background-color: #D2D0BA;
+    display: inline-block;
+    width: 32%;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.body-container
+{
+    display: block;
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.white-color
+{
+    color: white;
+}
+
+.separate
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-design
+{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #7B9E87;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    width: 230px;
+    height: 55px;
+}
+

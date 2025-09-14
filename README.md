@@ -36,7 +36,10 @@
 1. [Formato de texto, fuentes, fondos y border](/Ejercicio_01/index.html)
     * Realizar pagina html empleando elementos decorativos de css.
 
-2. Nombre de ejercicio
+2. [Tarjeta](/Ejercicio_02/index.html)
+    * Realizar una tarjeta empleando propiedades basicas de CSS.
+
+3. Nombre de ejercicio
     * Descripcion de ejercicio
 
 ### Datos del propietario

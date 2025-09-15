@@ -1,0 +1,39 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    min-height: 200vh;
+}
+
+.gray-background
+{
+    background: lightgray;
+}
+
+.container
+{
+    min-height: 400px;
+    border: 1px solid black;
+}
+
+.relative-box
+{
+    background: lightblue;
+    position: relative;
+    top: -30px;
+    left: 25px;
+}
+
+.absolute-box
+{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.fixed-box
+{
+    background: lightgoldenrodyellow;
+    position: fixed;
+    z-index: 50;
+}

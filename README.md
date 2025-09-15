@@ -18,6 +18,10 @@
 
 * [06: Selectores basicos](/Clases/06_selectores_basicos/index.html)
 
+* [07: Dimsenciones](/Clases/07_dimensiones/index.html)
+
+* [08: CSS Position](/Clases/08_css_position/index.html)
+
 * Tema N
 
 ### Ejercicios

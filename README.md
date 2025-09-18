@@ -37,7 +37,7 @@
 
 ## CSS
 
-1. [Formato de texto, fuentes, fondos y border](/Ejercicio_01/index.html)
+1. [Formato de texto, fuentes, fondos y border](/Css/Ejercicio_01/index.html)
     * Realizar pagina html empleando elementos decorativos de css.
 
 2. [Tarjeta](/Ejercicio_02/index.html)

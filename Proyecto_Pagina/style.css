@@ -1,0 +1,13 @@
+body
+{
+    background: #003049;
+}
+
+.background-img
+{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: -8px;
+}

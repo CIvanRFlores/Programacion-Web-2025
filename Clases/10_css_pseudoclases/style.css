@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+a {
+    background: lightblue;
+    text-decoration: none;
+    padding: 10px;
+    display: block;;
+    width: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+/* Links */
+
+a:link {
+    background: lightblue;
+    color: darkblue;
+}
+
+a:visited {
+    background: lightpink;
+    color: purple;
+}
+
+a:hover {
+    background: lightcoral;
+    text-decoration: underline;
+    width: 200px;
+    color: white;
+    transition: all 0.5s;
+}
+
+a:active {
+    background: orange;
+    color: white;
+}
+
+/* Listas */
+
+li:first-child {
+    color: cornflowerblue;
+}
+
+li:last-child {
+    color: lightcoral;
+}
+
+li:nth-child(odd) {
+    background: #f0f0f0;
+}
+
+li:nth-child(even) {
+    background: #e0e0e0;
+}
+
+/* Formulario */
+
+button {
+    width: 100%;
+    background-color: lightblue;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form {
+    margin: 2% 2%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-text, textarea {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+
+input:disabled {
+    background: lightgray;
+}
+
+.checkbox:checked, .checkbox:focus {
+    outline: none;
+}
+
+form:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s;
+}
+
+button:hover {
+    background: rgb(66, 66, 179);
+    color: white;
+    transition: all 0.4s;
+
+}

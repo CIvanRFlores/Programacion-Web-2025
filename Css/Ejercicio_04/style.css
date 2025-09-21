@@ -12,7 +12,7 @@ header{
 }
 
 .home-img{
-    background-image: url(img/image.png);
+    background-image: url(resources/img/image.png);
     width: 99vw;
     height: 100vh;
     background-size: 100% auto;

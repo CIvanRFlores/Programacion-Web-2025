@@ -4,7 +4,7 @@
 
 #### Respositorio general de registros dirigido a la materia de Desarrollo Web.
 
-### Clases
+## Clases
 
 * [01: Formato texto](/Clases/01_formato_texto/index.html)
 
@@ -28,9 +28,9 @@
 
 * Tema N
 
-### Ejercicios
+## Ejercicios
 
-## HTML
+### HTML
 
 1. [Pagina web con elementos basicos](/Html/Ejercicio_01/index.html)
     * Creacion de una pagina HTML sobre un tema de seleccion empleando elementos basicos.
@@ -39,7 +39,7 @@
 3. [Formularios y metadatos](/Html/Ejercicio_03/index.html)
     * Modificar pagina agregando elementos como formularios y metadatos.
 
-## CSS
+### CSS
 
 1. [Formato de texto, fuentes, fondos y border](/Css/Ejercicio_01/index.html)
     * Realizar pagina html empleando elementos decorativos de css.
@@ -56,7 +56,7 @@
 5. Nombre de ejercicio
     * Descripcion de ejercicio
 
-### Datos del propietario
+## Datos del propietario
 
 |Alumno|Carrera|Semestre|Materia|
 |------------------------------|:-:|:-:|:--------------:|

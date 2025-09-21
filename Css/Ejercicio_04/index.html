@@ -26,14 +26,14 @@
                 <h3 class="modif-subtitle">Forja la historia, Incendia el destino</h3>
             </div>
             <div>
-                <iframe class="modif-video" width="860" height="475" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="modif-video" width="860" height="475" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </main>
     
     <footer>
         <div>
-            <h2 style="color: white;">¿Te gustaria reseñarnos?</h2>
+            <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
 
             <section id="formulario">
                 <form method="get" action="#">
@@ -43,24 +43,26 @@
                         <br>
 
                         <div>
-                            <label for="nombreusuario">Usuario : </label>
+                            <label for="nombreusuario">-| Usuario |-</label>
                             <input type="text" id="nombreusuario" name="usuario" placeholder="Nombre de usuario..." required>
                         </div>
 
                         <hr>
 
                         <div>
-                            <label for="correousuario">Correo electronico : </label>
-                            <input type="email" id="correousuario" name="correo" placeholder="Correo eletronico..." required>
+                            <label for="correousuario">-| Correo electronico |-</label>
+                            <input type="email" id="correousuario" name="correo" placeholder="Correo eletronico...">
                         </div>
 
                         <hr>
+                        <br>
 
-                        <textarea rows="6" cols="40" placeholder="Comentarios..."></textarea required>
+                        <label for="comentario">-| Comentarios |-</label>
+                        <textarea rows="4" cols="40" placeholder="Comentarios..."></textarea required>
 
                         <hr>
 
-                        <legend>Valoracion</legend>
+                        <legend>-| Valoracion |-</legend>
                         <select name="valoracion" required>
                             <optgroup label="Valoracion">
                                 <option></option>
@@ -74,13 +76,13 @@
         
                         <hr>
 
-                        <legend>Motivo</legend>
-                        <input list="motivo" name="Motivo" required>
+                        <legend>-| Motivo |-</legend>
+                        <input list="motivo" name="Motivo">
                         <datalist id="motivo">
                             <option value="Aporte"></option>
                             <option value="Apoyo"></option>
                             <option value="Critica"></option>
-                            <option value="Otros"></option>
+                            <option value="Otro"></option>
                         </datalist>
 
                         <br><br>

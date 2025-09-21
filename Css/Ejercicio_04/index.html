@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DF | Inicio</title>
+    <link rel="stylesheet" href="/Proyecto_Pagina/style.css">
+</head>
+<body>
+    <header>
+        <nav class="head-content">
+            <a class="head-container" href="#">Inicio</a>
+            <a class="head-container" href="#">Juegos</a>
+            <a class="head-container" href="#">Productos</a>
+            <a class="head-container" href="#">Contactos</a>
+            <a class="head-container" href="#">Avisos</a>
+            <a class="head-container" href="#">Nosotros</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-img">
+            <div>
+                <h2 class="modif-title">DragonFlame</h2>
+                <br>
+                <h3 class="modif-subtitle">Forja la historia, Incendia el destino</h3>
+            </div>
+            <div>
+                <iframe class="modif-video" width="860" height="475" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div>
+            <h2 style="color: white;">¿Te gustaria enviarnos un comentario?</h2>
+
+            <section id="formulario">
+                <form method="get" action="#">
+                    <fieldset>
+                        <legend>Date el gusto :D</legend>
+
+                        <br>
+
+                        <div>
+                            <label for="nombreusuario">Usuario : </label>
+                            <input type="text" id="nombreusuario" name="usuario" placeholder="Nombre de usuario..." required>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <label for="correousuario">Correo electronico : </label>
+                            <input type="email" id="correousuario" name="correo" placeholder="Correo eletronico..." required>
+                        </div>
+
+                        <hr>
+
+                        <textarea rows="6" cols="40" placeholder="Comentarios..."></textarea required>
+
+                        <hr>
+
+                        <legend>Valoracion</legend>
+                        <select name="valoracion" required>
+                            <optgroup label="Valoracion">
+                                <option></option>
+                                <option value="1">5✰</option>
+                                <option value="2">4✰</option>
+                                <option value="3">3✰</option>
+                                <option value="4">2✰</option>
+                                <option value="5">1✰</option>
+                            </optgroup>
+                        </select>
+        
+                        <hr>
+
+                        <legend>Motivo</legend>
+                        <input list="motivo" name="Motivo" required>
+                        <datalist id="motivo">
+                            <option value="Aporte"></option>
+                            <option value="Apoyo"></option>
+                            <option value="Critica"></option>
+                            <option value="Otros"></option>
+                        </datalist>
+
+                        <br><br>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                    <hr>
+                </form>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

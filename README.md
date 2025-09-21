@@ -22,6 +22,10 @@
 
 * [08: CSS Position](/Clases/08_css_position/index.html)
 
+* [09: CSS Pseudoelementos](/Clases/09_css_pseudoelementos/index.html)
+
+* [10: CSS Pseudoclases](/Clases/10_css_pseudoclases/index.html)
+
 * Tema N
 
 ### Ejercicios
@@ -46,7 +50,10 @@
 3. [Header sticky](/Css/Ejercicio_03/index.html)
     * Desarrollar un encabezado sticky (sub-menu superior dentro de paginas)
 
-4. Nombre de ejercicio
+4. [Formulario con estilos, pseudoelementos y pseudoclases](/Css/Ejercicio_04/index.html)
+    * Utilizar formularios y darle estilos que combinen con el sitio web.
+
+5. Nombre de ejercicio
     * Descripcion de ejercicio
 
 ### Datos del propietario

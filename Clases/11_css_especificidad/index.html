@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad y selectores</title>
+    <style>
+        * {
+            color: red; /* Especificidad (0,0,0,0)*/
+        }
+
+        p {
+            color: purple;  /* Especificidad (0,0,0,1)*/
+        }
+
+        .green-text {
+            color: green !important;  /* Especificidad (0,0,1,0)*/
+        }
+
+        #mi-parrafo {
+            color: blue; /* Especificidad (0,1,0,0)*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        fdfgjfdklgdf
+        <p id="mi-parrafo" class="green-text otra-clase" style="color: yellow">Hijo directo</p>
+        <section>
+            <p class="green-text">Nieto</p>
+        </section>
+    </div>
+</body>
+</html>

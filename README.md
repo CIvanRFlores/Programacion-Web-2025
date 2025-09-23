@@ -26,6 +26,10 @@
 
 * [10: CSS Pseudoclases](/Clases/10_css_pseudoclases/index.html)
 
+* [11: CSS Especificidad](/Clases/11_css_especificidad/index.html)
+
+* [12: CSS Flexbox](/Clases/12_css_flexbox/index.html)
+
 * Tema N
 
 ## Ejercicios

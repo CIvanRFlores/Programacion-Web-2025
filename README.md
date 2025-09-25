@@ -57,7 +57,10 @@
 4. [Formulario con estilos, pseudoelementos y pseudoclases](/Css/Ejercicio_04/index.html)
     * Utilizar formularios y darle estilos que combinen con el sitio web.
 
-5. Nombre de ejercicio
+5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/productos.html)
+    * Elaborar tarjetas de columnas y filas utilizando Flexbox.
+
+6. Nombre de ejercicio
     * Descripcion de ejercicio
 
 ## Datos del propietario

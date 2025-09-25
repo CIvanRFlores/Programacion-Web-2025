@@ -48,7 +48,7 @@
 1. [Formato de texto, fuentes, fondos y border](/Css/Ejercicio_01/index.html)
     * Realizar pagina html empleando elementos decorativos de css.
 
-2. [Tarjeta](/Ejercicio_02/index.html)
+2. [Tarjeta](/Css/Ejercicio_02/index.html)
     * Realizar una tarjeta empleando propiedades basicas de CSS.
 
 3. [Header sticky](/Css/Ejercicio_03/index.html)
@@ -57,7 +57,7 @@
 4. [Formulario con estilos, pseudoelementos y pseudoclases](/Css/Ejercicio_04/index.html)
     * Utilizar formularios y darle estilos que combinen con el sitio web.
 
-5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/productos.html)
+5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/products.html)
     * Elaborar tarjetas de columnas y filas utilizando Flexbox.
 
 6. Nombre de ejercicio

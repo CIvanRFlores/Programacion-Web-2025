@@ -80,7 +80,7 @@ input{
 }
 
 .home-img{
-    background-image: url(/./Proyecto_Pagina/resources/img/image.png);
+    background-image: url(../resources/img/image.png);
     margin-top: -9%;
     width: 99vw;
     height: 110vh;

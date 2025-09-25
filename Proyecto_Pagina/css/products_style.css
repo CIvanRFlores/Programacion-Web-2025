@@ -1,0 +1,54 @@
+.card-container
+{
+    color: #FCBF49;
+    font-family: Arial;
+    text-align: center;
+    background-color: #0A234A;
+    border: 3px solid #fcbf49;
+    border-radius: 8px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 448px;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 13px;
+    
+}
+
+.separate
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-design
+{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #d62828;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    height: 55px;
+    padding: 15px;
+    width: 70%;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+div img{
+    background-color: white;
+    width: 454px;
+    height: 400px;
+    margin: 7%;
+    border-radius: 8px;
+}
+
+.button-design:hover{
+    background-color: #FCBF49;
+    color: #0A234A;
+    text-shadow: none;
+}

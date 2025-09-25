@@ -1,0 +1,96 @@
+html{
+    overscroll-behavior: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #003049;
+}
+
+header{
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.head-content{
+    background-color: transparent;
+    display: inline-block;
+}
+
+.head-container{
+    color: #FCBF49;
+    text-shadow: 1px 1px 10px black;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 82px 16px 78px;
+    border: 3px solid #FCBF49;
+    border-radius: 8%;
+    background: #0A234A;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4px;
+}
+
+.head-container:hover{
+    color: #d62828;
+    background-color: #FCBF49;
+    text-shadow: none;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: -14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 90%;
+    background-color: #0A234A;
+    border: 3px solid #FCBF49;
+    border-radius: 2%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 2;
+    min-width: 180px;
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px;
+    color: #FCBF49;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #0A234A;
+    text-shadow: 1px 1px 10px black;
+    border: 1px solid #FCBF49;
+    margin: 4px;
+}
+
+.submenu li a:hover{
+    color: #d62828;
+    background-color: #FCBF49;
+    text-shadow: none;
+}
+
+.drop-menu{
+    position: relative;
+}
+
+.drop-menu:hover .submenu{
+    display: block;
+}

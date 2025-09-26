@@ -1,9 +1,10 @@
 form {
     text-align: center;
     margin: 0;
-    max-width: 40%;
+    width: 120%;
     padding: 30px;
     background: #f77f00;
+    background: linear-gradient(to bottom, #d62828, #f77f00);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 5px solid #fcbf49 ;
@@ -49,7 +50,7 @@ select{
     background: #003049;
     color: #fcbf49;
     padding: 6px;
-    border: none;
+    border: 3px solid #ccc;
     border-radius: 8px;
 }
 
@@ -58,7 +59,7 @@ textarea{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
     color: #fcbf49;
@@ -71,12 +72,22 @@ input{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
     color: #fcbf49;
     background: #003049;
     box-sizing: border-box;
+}
+
+.modif-input:focus, select:focus{
+    border: 3px solid #d62828;
+    background-color: #fcbf49;
+    color: #003049;
+}
+
+.modif-input:hover{
+    border: 3px solid #d62828;
 }
 
 .home-img{
@@ -97,10 +108,10 @@ input{
 }
 
 .modif-title-review{
-    margin-left: 13%;
     font-family: Arial;
     color: #FCBF49;
     display: block;
+    text-align: center;
 }
 
 .modif-subtitle{
@@ -115,4 +126,14 @@ input{
     margin-left: 22%;
     margin-top: 2%;
     text-align: center;
+}
+
+.modif-display{
+    display: inline-block;
+    margin: 3%;
+}
+
+.modif-review-image{
+    margin-left: 40px;
+    padding: 10px;
 }

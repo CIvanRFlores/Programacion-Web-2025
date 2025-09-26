@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DF | Inicio</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/superior_menu.css">
+    <link rel="stylesheet" href="../css/superior_menu_style.css">
 </head>
 <body>
     <header>
@@ -43,7 +43,7 @@
     </main>
     
     <footer>
-        <div>
+        <div class="modif-display">
             <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
 
             <section id="formulario">
@@ -55,26 +55,26 @@
 
                         <div>
                             <label for="nombreusuario">-| Usuario |-</label>
-                            <input type="text" id="nombreusuario" name="usuario" placeholder="Nombre de usuario..." required>
+                            <input class="modif-input" type="text" id="nombreusuario" name="usuario" placeholder="Nombre de usuario..." required>
                         </div>
 
                         <hr>
 
                         <div>
                             <label for="correousuario">-| Correo electronico |-</label>
-                            <input type="email" id="correousuario" name="correo" placeholder="Correo eletronico...">
+                            <input class="modif-input" type="email" id="correousuario" name="correo" placeholder="Correo eletronico...">
                         </div>
 
                         <hr>
                         <br>
 
                         <label for="comentario">-| Comentarios |-</label>
-                        <textarea rows="4" cols="40" placeholder="Comentarios..."></textarea required>
+                        <textarea class="modif-input" rows="4" cols="40" placeholder="Comentarios..."></textarea required>
 
                         <hr>
 
                         <legend>-| Valoracion |-</legend>
-                        <select name="valoracion" required>
+                        <select class="modif-input" name="valoracion" required>
                             <optgroup label="Valoracion">
                                 <option></option>
                                 <option value="1">5✰</option>
@@ -88,7 +88,7 @@
                         <hr>
 
                         <legend>-| Motivo |-</legend>
-                        <input list="motivo" name="Motivo">
+                        <input class="modif-input" list="motivo" name="Motivo">
                         <datalist id="motivo">
                             <option value="Aporte"></option>
                             <option value="Apoyo"></option>
@@ -103,6 +103,10 @@
                     <hr>
                 </form>
             </section>
+        </div>
+
+        <div class="modif-display">
+            <img class="modif-review-image" width="800px" height="700px" src="../resources/img/JobberFr1.png">
         </div>
     </footer>
 </body>

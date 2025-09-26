@@ -4,6 +4,7 @@
     font-family: Arial;
     text-align: center;
     background-color: #0A234A;
+    background: linear-gradient(to bottom, #d62828, #0A234A);
     border: 3px solid #fcbf49;
     border-radius: 8px;
     display: inline-flex;

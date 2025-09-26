@@ -5,7 +5,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: #003049;
+    background-color: #003049;
+    background: linear-gradient(to bottom, #003049, #0A234A);
 }
 
 header{
@@ -93,4 +94,10 @@ header{
 
 .drop-menu:hover .submenu{
     display: block;
+}
+
+.drop-menu:hover .head-container{
+    color: #d62828;
+    background-color: #FCBF49;
+    text-shadow: none;
 }

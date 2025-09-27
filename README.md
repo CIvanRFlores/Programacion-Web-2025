@@ -60,7 +60,10 @@
 5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/products.html)
     * Elaborar tarjetas de columnas y filas utilizando Flexbox.
 
-6. Nombre de ejercicio
+6. [Varibales y funciones](/Proyecto_Pagina/html/index.html)
+    * Aplicar variables y funciones al diseño con CSS.
+
+7. Nombre de ejercicio
     * Descripcion de ejercicio
 
 ## Datos del propietario

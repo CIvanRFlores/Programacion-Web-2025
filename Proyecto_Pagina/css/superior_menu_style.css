@@ -1,3 +1,11 @@
+:root{
+    --first-color: #003049;
+    --second-color: #fcbf49;
+    --third-color: #f77f00;
+    --fourth-color: #d62828;
+    --fifth-color: #0A234A;
+}
+
 html{
     overscroll-behavior: none;
 }
@@ -5,8 +13,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: #003049;
-    background: linear-gradient(to bottom, #003049, #0A234A);
+    background-color: var(--first-color);
+    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
 }
 
 header{
@@ -22,16 +30,16 @@ header{
 }
 
 .head-container{
-    color: #FCBF49;
+    color: var(--second-color);
     text-shadow: 1px 1px 10px black;
     text-decoration: none;
     font-family: Arial;
     font-weight: bold;
     font-size: 20px;
     padding: 16px 82px 16px 78px;
-    border: 3px solid #FCBF49;
+    border: 3px solid var(--second-color);
     border-radius: 8%;
-    background: #0A234A;
+    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -39,8 +47,8 @@ header{
 }
 
 .head-container:hover{
-    color: #d62828;
-    background-color: #FCBF49;
+    color: var(--fourth-color);
+    background: radial-gradient(circle, var(--second-color), var(--third-color));
     text-shadow: none;
 }
 
@@ -58,8 +66,8 @@ header{
     display: none;
     position: absolute;
     top: 90%;
-    background-color: #0A234A;
-    border: 3px solid #FCBF49;
+    background-color: var(--fifth-color);
+    border: 3px solid var(--second-color);
     border-radius: 2%;
     padding: 0;
     margin: 0;
@@ -71,20 +79,20 @@ header{
 .submenu li a{
     display: block;
     padding: 10px;
-    color: #FCBF49;
+    color: var(--second-color);
     text-decoration: none;
     text-align: center;
     font-family: Arial;
     font-weight: bold;
-    background-color: #0A234A;
+    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
     text-shadow: 1px 1px 10px black;
-    border: 1px solid #FCBF49;
+    border: 1px solid var(--second-color);
     margin: 4px;
 }
 
 .submenu li a:hover{
-    color: #d62828;
-    background-color: #FCBF49;
+    color: var(--fourth-color);
+    background: radial-gradient(circle, var(--second-color), var(--third-color));
     text-shadow: none;
 }
 
@@ -97,7 +105,7 @@ header{
 }
 
 .drop-menu:hover .head-container{
-    color: #d62828;
-    background-color: #FCBF49;
+    color: var(--fourth-color);
+    background: radial-gradient(circle, var(--second-color), var(--third-color));
     text-shadow: none;
 }

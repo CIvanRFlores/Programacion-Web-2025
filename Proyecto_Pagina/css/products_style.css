@@ -1,11 +1,11 @@
 .card-container
 {
-    color: #FCBF49;
+    color: var(--second-color);
     font-family: Arial;
     text-align: center;
-    background-color: #0A234A;
-    background: linear-gradient(to bottom, #d62828, #0A234A);
-    border: 3px solid #fcbf49;
+    background-color: var(--first-color);
+    background: radial-gradient(circle, var(--fourth-color), var(--fifth-color));
+    border: 3px solid var(--second-color);
     border-radius: 8px;
     display: inline-flex;
     flex-direction: row;
@@ -29,7 +29,7 @@
     font-size: 20px;
     font-family: Arial;
     font-weight: bold;
-    background-color: #d62828;
+    background: radial-gradient(circle, var(--fourth-color), var(--second-color));
     color: white;
     text-shadow: 1px 1px 5px black;
     height: 55px;
@@ -49,7 +49,7 @@ div img{
 }
 
 .button-design:hover{
-    background-color: #FCBF49;
-    color: #0A234A;
+    background: radial-gradient(circle, var(--second-color), var(--fourth-color));
+    color: var(--fifth-color);
     text-shadow: none;
 }

@@ -20,7 +20,7 @@ legend{
 
 label{
     font-size: 20px;
-    font-family: Arial;
+    font-family: 'subtitle-font';
     color: white;
     display: block;
     padding: 10px;
@@ -103,6 +103,7 @@ input{
     text-shadow: 1px 1px 10px black;
     color: var(--fourth-color);
     font-size: 120px;
+    font-family: 'title-font';
     text-decoration: underline;
 }
 
@@ -119,6 +120,7 @@ input{
     text-align: center;
     color: var(--second-color);
     font-size: 45px;
+    font-family: 'subtitle-font';
 }
 
 .modif-video{

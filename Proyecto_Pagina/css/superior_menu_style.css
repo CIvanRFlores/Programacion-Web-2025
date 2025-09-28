@@ -1,3 +1,13 @@
+@font-face{
+    font-family: 'subtitle-font';
+    src: url(../resources/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'title-font';
+    src: url(../resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
 :root{
     --first-color: #003049;
     --second-color: #fcbf49;
@@ -5,6 +15,7 @@
     --fourth-color: #d62828;
     --fifth-color: #0A234A;
 }
+
 
 html{
     overscroll-behavior: none;
@@ -33,9 +44,9 @@ header{
     color: var(--second-color);
     text-shadow: 1px 1px 10px black;
     text-decoration: none;
-    font-family: Arial;
+    font-family: 'subtitle-font';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
     padding: 16px 82px 16px 78px;
     border: 3px solid var(--second-color);
     border-radius: 8%;
@@ -82,7 +93,7 @@ header{
     color: var(--second-color);
     text-decoration: none;
     text-align: center;
-    font-family: Arial;
+    font-family: 'subtitle-font';
     font-weight: bold;
     background: radial-gradient(circle, var(--first-color), var(--fifth-color));
     text-shadow: 1px 1px 10px black;

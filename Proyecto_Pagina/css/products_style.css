@@ -12,7 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 448px;
-    padding: 1%;
+    padding: 0;
     margin-top: 2%;
     margin-left: 13px;
     
@@ -52,4 +52,12 @@ div img{
     background: radial-gradient(circle, var(--second-color), var(--fourth-color));
     color: var(--fifth-color);
     text-shadow: none;
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    gap: 40px;
+    padding: 30px;
+    justify-items: center;
 }

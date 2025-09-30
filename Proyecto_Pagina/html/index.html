@@ -43,70 +43,72 @@
     </main>
     
     <footer>
-        <div class="modif-display">
-            <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
-
-            <section id="formulario">
-                <form method="get" action="#">
-                    <fieldset>
-                        <legend class="bold-text">Date el gusto :D</legend>
-
-                        <br>
-
-                        <div>
-                            <label class="bold-text" for="nombreusuario">-| Usuario |-</label>
-                            <input class="modif-input" type="text" id="nombreusuario" name="usuario" placeholder="Ingrese usuario..." required>
-                        </div>
-
+        <div>
+            <div class="modif-display">
+                <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
+    
+                <section id="formulario">
+                    <form method="get" action="#">
+                        <fieldset>
+                            <legend class="bold-text">Date el gusto :D</legend>
+    
+                            <br>
+    
+                            <div>
+                                <label class="bold-text" for="nombreusuario">-| Usuario |-</label>
+                                <input class="modif-input" type="text" id="nombreusuario" name="usuario" placeholder="Ingrese usuario..." required>
+                            </div>
+    
+                            <hr>
+    
+                            <div>
+                                <label class="bold-text" for="correousuario">-| Correo electronico |-</label>
+                                <input class="modif-input" type="email" id="correousuario" name="correo" placeholder="Ingrese correo eletronico...">
+                            </div>
+    
+                            <hr>
+                            <br>
+    
+                            <label class="bold-text" for="comentario">-| Comentarios |-</label>
+                            <textarea class="modif-input" rows="4" cols="40" placeholder="Ingrese comentarios..."></textarea required>
+    
+                            <hr>
+    
+                            <legend class="bold-text">-| Valoracion |-</legend>
+                            <select class="modif-input" name="valoracion" required>
+                                <optgroup label="Valoracion">
+                                    <option></option>
+                                    <option value="1">5✰</option>
+                                    <option value="2">4✰</option>
+                                    <option value="3">3✰</option>
+                                    <option value="4">2✰</option>
+                                    <option value="5">1✰</option>
+                                </optgroup>
+                            </select>
+            
+                            <hr>
+    
+                            <legend class="bold-text">-| Motivo |-</legend>
+                            <input class="modif-input" list="motivo" name="Motivo" placeholder="Ingrese motivos...">
+                            <datalist id="motivo">
+                                <option value="Aporte"></option>
+                                <option value="Apoyo"></option>
+                                <option value="Critica"></option>
+                                <option value="Otro"></option>
+                            </datalist>
+    
+                            <br><br>
+    
+                            <button class="bold-text" type="submit">Enviar</button>
+                        </fieldset>
                         <hr>
-
-                        <div>
-                            <label class="bold-text" for="correousuario">-| Correo electronico |-</label>
-                            <input class="modif-input" type="email" id="correousuario" name="correo" placeholder="Ingrese correo eletronico...">
-                        </div>
-
-                        <hr>
-                        <br>
-
-                        <label class="bold-text" for="comentario">-| Comentarios |-</label>
-                        <textarea class="modif-input" rows="4" cols="40" placeholder="Ingrese comentarios..."></textarea required>
-
-                        <hr>
-
-                        <legend class="bold-text">-| Valoracion |-</legend>
-                        <select class="modif-input" name="valoracion" required>
-                            <optgroup label="Valoracion">
-                                <option></option>
-                                <option value="1">5✰</option>
-                                <option value="2">4✰</option>
-                                <option value="3">3✰</option>
-                                <option value="4">2✰</option>
-                                <option value="5">1✰</option>
-                            </optgroup>
-                        </select>
-        
-                        <hr>
-
-                        <legend class="bold-text">-| Motivo |-</legend>
-                        <input class="modif-input" list="motivo" name="Motivo" placeholder="Ingrese motivos...">
-                        <datalist id="motivo">
-                            <option value="Aporte"></option>
-                            <option value="Apoyo"></option>
-                            <option value="Critica"></option>
-                            <option value="Otro"></option>
-                        </datalist>
-
-                        <br><br>
-
-                        <button class="bold-text" type="submit">Enviar</button>
-                    </fieldset>
-                    <hr>
-                </form>
-            </section>
-        </div>
-
-        <div class="modif-display">
-            <img class="modif-review-image" width="800" height="860" src="../resources/img/ProjectImage.png">
+                    </form>
+                </section>
+            </div>
+    
+            <div class="modif-display">
+                <img class="modif-review-image" width="800" height="860" src="../resources/img/ProjectImage.png">
+            </div>
         </div>
     </footer>
 </body>

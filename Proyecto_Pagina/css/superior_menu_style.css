@@ -8,6 +8,11 @@
     src: url(../resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
 }
 
+@font-face{
+    font-family: 'text-font';
+    src: url(../resources/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
+}
+
 :root{
     --first-color: #003049;
     --second-color: #fcbf49;

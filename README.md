@@ -63,7 +63,10 @@
 6. [Varibales y funciones](/Proyecto_Pagina/html/index.html)
     * Aplicar variables y funciones al diseño con CSS.
 
-7. Nombre de ejercicio
+7. [CSS Grid](Proyecto_Pagina/html/products.html)
+    * Emplea CSS Grid en elementos para una mejor disposicion.
+
+8. Nombre de ejercicio
     * Descripcion de ejercicio
 
 ## Datos del propietario

@@ -1,0 +1,41 @@
+
+:root {
+    --color-principal: rgb(52, 152, 219);
+    --color-secundario: rgb(155, 89, 182);
+    --padding-caja: 20px;
+    --tamanio-fuente: 20px;
+}
+
+body{
+    /*box-sizing: border-box;*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: var(--padding-caja);
+    background: linear-gradient(to right, var(--color-principal), var(--color-secundario));
+    color: white;
+    min-height: calc(100vh - var(--padding-caja) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    color: black;
+    width: clamp(350px, 50%, 800px);
+    padding: var(--padding-caja);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    max-height: max(150px, 30vh);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0;
+    color: rgb(52, 152, 219);
+}

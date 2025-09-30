@@ -30,6 +30,10 @@
 
 * [12: CSS Flexbox](/Clases/12_css_flexbox/index.html)
 
+* [13: CSS Funciones variables](/Clases/13_css_funciones_variables/index.html)
+
+* [14: CSS Grid](/Clases/14_css_grid/index.html)
+
 * Tema N
 
 ## Ejercicios

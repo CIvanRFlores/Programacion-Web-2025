@@ -34,13 +34,12 @@ body{
 
 header{
     position: sticky;
-    top: 20px;
+    top: 0;
     text-align: center;
-    background: transparent;
+    background: rgba(0, 48, 73, 0.6);
 }
 
 .head-content{
-    background-color: transparent;
     display: inline-block;
 }
 
@@ -51,7 +50,7 @@ header{
     font-family: 'subtitle-font';
     font-weight: bold;
     font-size: 19px;
-    padding: 5% 82px;
+    padding: 15px 42px;
     border: 3px solid var(--second-color);
     border-radius: 8px;
     background: radial-gradient(circle, var(--first-color), var(--fifth-color));
@@ -68,9 +67,9 @@ header{
 }
 
 .menu{
+    margin: 0;
     list-style: none;
     padding: 0;
-    margin: -14px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,6 +77,7 @@ header{
 }
 
 .submenu{
+    width: 97%;
     display: none;
     position: absolute;
     top: 90%;
@@ -85,15 +85,13 @@ header{
     border: 3px solid var(--second-color);
     border-radius: 2%;
     padding: 0;
-    margin: 0;
     list-style: none;
     z-index: 2;
-    min-width: 180px;
 }
 
 .submenu li a{
     display: block;
-    padding: 10px;
+    padding: 8px;
     color: var(--second-color);
     text-decoration: none;
     text-align: center;
@@ -102,7 +100,6 @@ header{
     background: radial-gradient(circle, var(--first-color), var(--fifth-color));
     text-shadow: 1px 1px 10px black;
     border: 1px solid var(--second-color);
-    margin: 4px;
 }
 
 .submenu li a:hover{
@@ -123,4 +120,10 @@ header{
     color: var(--fourth-color);
     background: radial-gradient(circle, var(--second-color), var(--third-color));
     text-shadow: none;
+}
+
+@media(max-width:480px){
+    header{
+        display: none;
+    }
 }

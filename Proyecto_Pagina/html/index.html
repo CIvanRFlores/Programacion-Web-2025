@@ -15,11 +15,11 @@
                 <li><a class="head-container" href="#">Juegos</a></li>
                 <li class="drop-menu"><a class="head-container" href="products.html">Productos</a>
                     <ul class="submenu">
-                        <li><a href="#">Ropa</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Plushies</a></li>
-                        <li><a href="#">Stickers</a></li>
-                        <li><a href="#">Figuras</a></li>
+                        <li><a href="products.html">Ropa</a></li>
+                        <li><a href="products.html">Accesorios</a></li>
+                        <li><a href="products.html">Plushies</a></li>
+                        <li><a href="products.html">Stickers</a></li>
+                        <li><a href="products.html">Figuras</a></li>
                     </ul>
                 </li>
                 <li><a class="head-container" href="#">Contactos</a></li>
@@ -33,82 +33,83 @@
         <div class="home-img">
             <div>
                 <h2 class="modif-title">DragonFlame</h2>
-                <br>
                 <h3 class="modif-subtitle">Forja la historia, Incendia el destino</h3>
             </div>
-            <div>
-                <iframe class="modif-video" width="860" height="475" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="display-video">
+                <iframe width="700" height="410" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </main>
     
     <footer>
         <div>
-            <div class="modif-display">
-                <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
-    
-                <section id="formulario">
-                    <form method="get" action="#">
-                        <fieldset>
-                            <legend class="bold-text">Date el gusto :D</legend>
-    
-                            <br>
-    
-                            <div>
-                                <label class="bold-text" for="nombreusuario">-| Usuario |-</label>
-                                <input class="modif-input" type="text" id="nombreusuario" name="usuario" placeholder="Ingrese usuario..." required>
-                            </div>
-    
-                            <hr>
-    
-                            <div>
-                                <label class="bold-text" for="correousuario">-| Correo electronico |-</label>
-                                <input class="modif-input" type="email" id="correousuario" name="correo" placeholder="Ingrese correo eletronico...">
-                            </div>
-    
-                            <hr>
-                            <br>
-    
-                            <label class="bold-text" for="comentario">-| Comentarios |-</label>
-                            <textarea class="modif-input" rows="4" cols="40" placeholder="Ingrese comentarios..."></textarea required>
-    
-                            <hr>
-    
-                            <legend class="bold-text">-| Valoracion |-</legend>
-                            <select class="modif-input" name="valoracion" required>
-                                <optgroup label="Valoracion">
-                                    <option></option>
-                                    <option value="1">5✰</option>
-                                    <option value="2">4✰</option>
-                                    <option value="3">3✰</option>
-                                    <option value="4">2✰</option>
-                                    <option value="5">1✰</option>
-                                </optgroup>
-                            </select>
+            <div>
+                <div>
+                    <section class="display-form">
+                        <div>
+                            <h2 class="modif-title-review">¿Te gustaria reseñarnos?</h2>
+                            <form method="get" action="#">
+                                <fieldset>
+                                    <legend >Date el gusto :D</legend>
             
-                            <hr>
-    
-                            <legend class="bold-text">-| Motivo |-</legend>
-                            <input class="modif-input" list="motivo" name="Motivo" placeholder="Ingrese motivos...">
-                            <datalist id="motivo">
-                                <option value="Aporte"></option>
-                                <option value="Apoyo"></option>
-                                <option value="Critica"></option>
-                                <option value="Otro"></option>
-                            </datalist>
-    
-                            <br><br>
-    
-                            <button class="bold-text" type="submit">Enviar</button>
-                        </fieldset>
-                        <hr>
-                    </form>
-                </section>
+                                    <br>
+            
+                                    <div>
+                                        <label for="nombreusuario">-| Usuario |-</label>
+                                        <input class="modif-input" type="text" id="nombreusuario" name="usuario" placeholder="Ingrese usuario..." required>
+                                    </div>
+            
+                                    <hr>
+            
+                                    <div>
+                                        <label for="correousuario">-| Correo electronico |-</label>
+                                        <input class="modif-input" type="email" id="correousuario" name="correo" placeholder="Ingrese correo eletronico...">
+                                    </div>
+            
+                                    <hr>
+                                    <br>
+            
+                                    <label for="comentario">-| Comentarios |-</label>
+                                    <textarea class="modif-input" rows="4" cols="40" placeholder="Ingrese comentarios..."></textarea required>
+            
+                                    <hr>
+            
+                                    <legend>-| Valoracion |-</legend>
+                                    <select class="modif-input" name="valoracion" required>
+                                        <optgroup label="Valoracion">
+                                            <option></option>
+                                            <option value="1">5✰</option>
+                                            <option value="2">4✰</option>
+                                            <option value="3">3✰</option>
+                                            <option value="4">2✰</option>
+                                            <option value="5">1✰</option>
+                                        </optgroup>
+                                    </select>
+                    
+                                    <hr>
+            
+                                    <legend class="bold-text">-| Motivo |-</legend>
+                                    <input class="modif-input" list="motivo" name="Motivo" placeholder="Ingrese motivos...">
+                                    <datalist id="motivo">
+                                        <option value="Aporte"></option>
+                                        <option value="Apoyo"></option>
+                                        <option value="Critica"></option>
+                                        <option value="Otro"></option>
+                                    </datalist>
+            
+                                    <br><br>
+            
+                                    <button class="bold-text" type="submit">Enviar</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="center-image-review">
+                            <img width="580" height="680" src="../resources/img/ProjectImage.png">
+                        </div>
+                    </section>
+                </div>
             </div>
     
-            <div class="modif-display">
-                <img class="modif-review-image" width="800" height="860" src="../resources/img/ProjectImage.png">
-            </div>
         </div>
     </footer>
 </body>

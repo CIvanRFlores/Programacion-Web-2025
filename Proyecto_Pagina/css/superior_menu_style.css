@@ -29,7 +29,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--first-color);
     background: radial-gradient(circle, var(--first-color), var(--fifth-color));
 }
 
@@ -52,9 +51,9 @@ header{
     font-family: 'subtitle-font';
     font-weight: bold;
     font-size: 19px;
-    padding: 16px 82px 16px 78px;
+    padding: 5% 82px;
     border: 3px solid var(--second-color);
-    border-radius: 8%;
+    border-radius: 8px;
     background: radial-gradient(circle, var(--first-color), var(--fifth-color));
     display: inline-block;
     position: relative;

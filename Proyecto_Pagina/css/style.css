@@ -40,7 +40,7 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:active{
     background: radial-gradient(circle, var(--second-color), var(--fourth-color));
     color: var(--first-color);
 }
@@ -89,7 +89,7 @@ input{
         url(../resources/img/PcBG.png);
     margin-top: -60px;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-size: 100% auto;
 }
 
@@ -117,6 +117,26 @@ input{
     display: flex;
     justify-content: center;
     margin-top: -10px;
+}
+
+.display-text1{
+    display: flex;
+}
+
+.text1-image-modif{
+    margin: 2%;
+    width: 55vw;
+    border: 4px solid var(--second-color);
+    border-radius: 8px;
+}
+
+.text1-text-modif{
+    margin: 2%;
+    color: white;
+    font-family: 'text-font';
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
 }
 
 .display-form{

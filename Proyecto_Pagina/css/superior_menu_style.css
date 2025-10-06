@@ -43,6 +43,22 @@ header{
     display: inline-block;
 }
 
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 2vh;
+    background-color: var(--fifth-color);
+    border-radius: 3px;
+    padding: 18px;
+    cursor: pointer;
+    border: 2px solid var(--second-color);
+    opacity: 0.5;
+}
+
+.toggle-menu{
+    display: none;
+}
+
 .head-container{
     color: var(--second-color);
     text-shadow: 1px 1px 10px black;
@@ -127,8 +143,58 @@ header{
     border: 3px solid var(--fourth-color);
 }
 
-@media(max-width:480px){
+@media(min-width:320px) and (max-width: 480px){
     header{
+        text-align: left;
+    }
+
+    .submenu li a{
         display: none;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 11;
+    }
+
+    .toggle-menu:checked + .menu-btn{
+        opacity: 1;
+        left: 67px;
+    }
+
+    .toggle-menu:checked ~ .head-content{
+        transform: translate(0);
+    }
+    
+    .menu-icon{
+        background-image: url(../resources/img/BurgerMenuIcon.png);
+    }
+
+    .head-container{
+    font-size: 13px;
+    width: 78px;
+    padding: 8px 10%;
+    border: 2px solid var(--second-color);
+    border-radius: 0;
+    }
+
+    .head-container:hover{
+    border: 2px solid var(--fourth-color);
+    }
+
+    .menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .head-content{
+        position: fixed;
+        width: 120px;
+        height: 305px;
+        z-index: 10;
+        padding-top: 10vh;
+        transform: translateX(-100%);
+        background-color: rgba(0, 48, 73, 0.7);
+        border-radius: 4px;
     }
 }

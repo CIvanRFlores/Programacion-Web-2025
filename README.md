@@ -34,6 +34,8 @@
 
 * [14: CSS Grid](/Clases/14_css_grid/index.html)
 
+* [15: CSS Responsivo](/Clases/15_css_responsivo/index.html)
+
 * Tema N
 
 ## Ejercicios
@@ -70,7 +72,10 @@
 7. [CSS Grid](Proyecto_Pagina/html/products.html)
     * Emplea CSS Grid en elementos para una mejor disposicion.
 
-8. Nombre de ejercicio
+8. [Sitio responsivo](Proyecto_Pagina/html/index.html)
+    * Modificar el sitio para que sea responsivo (resolucion).
+
+9. [Nombre de ejercicio]
     * Descripcion de ejercicio
 
 ## Datos del propietario

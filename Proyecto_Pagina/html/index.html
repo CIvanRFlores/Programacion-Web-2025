@@ -9,6 +9,8 @@
 </head>
 <body>
     <header>
+        <input class="toggle-menu" type="checkbox" id="burger-menu">
+        <label class="menu-btn menu-icon" for="burger-menu"></label>
         <nav class="head-content">
             <ul class="menu">
                 <li><a class="head-container" href="#">Inicio</a></li>
@@ -36,7 +38,7 @@
                 <h3 class="modif-subtitle">Forja la historia, Incendia el destino</h3>
             </div>
             <div class="display-video">
-                <iframe width="700" height="410" src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/FtutLA63Cp8?si=mtf-_tehmzUFEGsL" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -44,7 +46,7 @@
 
         <div class="display-text1">
             <img class="text1-image-modif" src="../resources/img/TextImage.jpg">
-            <p class="text1-text-modif">Cada historia sigue un curso, es el jugador quien lo dirige.<br><br>Cada historia busca narrar un suceso abarcado de originalidad y emociones que sacian la expectativa del jugador.<br><br>Cada historia se realiza con pasión, es un proceso que no busca demostrar algo, sino, compartirlo.<br><br>Cada historia es única.</p>
+            <p class="text1-text-modif"><br>Cada historia sigue un curso, es el jugador quien lo dirige.<br><br>Cada historia busca narrar un suceso abarcado de originalidad y emociones que sacian la expectativa del jugador.<br><br>Cada historia se realiza con pasión, es un proceso que no busca demostrar algo, sino, compartirlo.<br><br>Cada historia es única.</p>
         </div>
 
     </main>
@@ -70,6 +72,7 @@
                                     </div>
             
                                     <hr>
+                                    <br>
             
                                     <div>
                                         <label for="correousuario">-| Correo electronico |-</label>
@@ -83,6 +86,7 @@
                                     <textarea class="modif-input" rows="4" cols="40" placeholder="Ingrese comentarios..."></textarea required>
             
                                     <hr>
+                                    <br>
             
                                     <legend>-| Valoracion |-</legend>
                                     <select class="modif-input" name="valoracion" required>
@@ -97,8 +101,9 @@
                                     </select>
                     
                                     <hr>
+                                    <br>
             
-                                    <legend class="bold-text">-| Motivo |-</legend>
+                                    <legend>-| Motivo |-</legend>
                                     <input class="modif-input" list="motivo" name="Motivo" placeholder="Ingrese motivos...">
                                     <datalist id="motivo">
                                         <option value="Aporte"></option>

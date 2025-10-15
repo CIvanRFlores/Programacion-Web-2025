@@ -7,7 +7,7 @@ input{
     font-family: 'subtitle-font';
     border-radius: 8px;
     border: 3px solid var(--second-color);
-    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
+    background-color: var(--first-color);
 }
 
 input:focus, select:focus{
@@ -41,7 +41,7 @@ input:hover{
     margin-left: 6px;
     border-radius: 8px;
     border: 2px solid var(--second-color);
-    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
+    background-color: var(--first-color);
 }
 
 .button-searchbar-modif:hover{
@@ -68,7 +68,7 @@ input:hover{
     font-family: Arial;
     text-align: center;
     background-color: var(--first-color);
-    background: radial-gradient(circle, var(--fourth-color), var(--fifth-color));
+    background: radial-gradient(circle, var(--fifth-color), var(--first-color));
     border: 3px solid var(--second-color);
     border-radius: 2%;
     padding: 4%;
@@ -89,19 +89,18 @@ input:hover{
     font-size: 22px;
     font-family: Arial;
     font-weight: bold;
-    background: radial-gradient(circle, var(--fourth-color), var(--second-color));
-    color: white;
+    background-color: var(--first-color);
+    color: var(--second-color);
     text-shadow: 1px 1px 5px black;
-    
     padding: 4%;
     width: 45%;
     cursor: pointer;
-    border: none;
+    border: 3px solid var(--second-color);
     border-radius: 8px;
 }
 
 .button-design:active{
-    background: radial-gradient(circle, var(--second-color), var(--fourth-color));
-    color: var(--fifth-color);
+    background-color: var(--second-color);
+    color: var(--first-color);
     text-shadow: none;
 }

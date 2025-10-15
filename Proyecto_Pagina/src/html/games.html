@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DF | Juegos</title>
+  <link rel="stylesheet" href="../css/superior_menu_style.css">
+  <link href="../../public/output.css" rel="stylesheet">    <!--Ejecutar npm run dev en la terminal siempre al inicio-->
+</head>
+<body>
+    <header class="z-40">
+        <input class="toggle-menu" type="checkbox" id="burger-menu">
+        <label class="menu-btn menu-icon" for="burger-menu"></label>
+        <nav class="head-content">
+            <ul class="menu">
+                <li><a class="head-container" href="../../index.html">Inicio</a></li>
+                <li><a class="head-container" href="#">Juegos</a></li>
+                <li class="drop-menu"><a class="head-container" href="../html/products.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="../html/products.html">Ropa</a></li>
+                        <li><a href="../html/products.html">Accesorios</a></li>
+                        <li><a href="../html/products.html">Plushies</a></li>
+                        <li><a href="../html/products.html">Stickers</a></li>
+                        <li><a href="../html/products.html">Figuras</a></li>
+                    </ul>
+                </li>
+                <li><a class="head-container" href="#">Contactos</a></li>
+                <li><a class="head-container" href="#">Avisos</a></li>
+                <li><a class="head-container" href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="relative w-full max-w-4xl mx-auto pt-8">
+        
+        <div class="overflow-hidden relative border-2 rounded-sm border-amber-300 cursor-pointer">
+          <div class="flex transition-transform duration-200 ease-in-out" id="carousel">
+
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../resources/img/vgimg_1.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../resources/img/vgimg_2.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../resources/img/vgimg_3.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../resources/img/vgimg_4.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../resources/img/vgimg_5.jpg">
+            </div>
+          </div>
+
+          <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black text-yellow-300 p-2 rounded-full cursor-pointer border-2">
+            &#10094;
+          </button>
+          <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black text-yellow-300 p-2 rounded-full cursor-pointer border-2">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </main>
+    
+    <script>
+      let currentIndex = 0; 
+      const slides = document.querySelectorAll('#carousel .min-w-full');
+      const totalSlides = slides.length;
+
+      const carousel = document.getElementById('carousel');
+
+      const goToNextSlide = () => {
+        if (currentIndex < totalSlides - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; 
+        }
+        updateCarousel();
+      };
+
+      const goToPrevSlide = () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = totalSlides - 1;
+        }
+        updateCarousel();
+      };
+
+      const updateCarousel = () => {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      };
+
+      document.getElementById('next').addEventListener('click', goToNextSlide);
+      document.getElementById('prev').addEventListener('click', goToPrevSlide);
+    </script>
+</body>
+</html>

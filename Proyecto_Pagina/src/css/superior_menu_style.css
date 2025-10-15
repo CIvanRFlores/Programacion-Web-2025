@@ -1,24 +1,24 @@
 @font-face{
     font-family: 'subtitle-font';
-    src: url(../resources/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(../../resources/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format('truetype');
 }
 
 @font-face{
     font-family: 'title-font';
-    src: url(../resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
+    src: url(../../resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
 }
 
 @font-face{
     font-family: 'text-font';
-    src: url(../resources/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
+    src: url(../../resources/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
 }
 
 :root{
-    --first-color: #003049;
+    --first-color: #000000;
     --second-color: #fcbf49;
     --third-color: #f77f00;
-    --fourth-color: #d62828;
-    --fifth-color: #0A234A;
+    --fourth-color: #AC2321;
+    --fifth-color: #5C1778;
 }
 
 
@@ -29,14 +29,14 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
+    background-color: var(--first-color);
 }
 
 header{
     position: sticky;
     top: 0;
     text-align: center;
-    background: rgba(0, 48, 73, 0.6);
+    background: rgba(252, 191, 73, 0.2);
 }
 
 .head-content{
@@ -47,7 +47,7 @@ header{
     display: none;
     position: absolute;
     top: 2vh;
-    background-color: var(--fifth-color);
+    background-color: var(--first-color);
     border-radius: 3px;
     padding: 18px;
     cursor: pointer;
@@ -69,7 +69,7 @@ header{
     padding: 15px 42px;
     border: 3px solid var(--second-color);
     border-radius: 8px;
-    background: radial-gradient(circle, var(--first-color), var(--fifth-color));
+    background-color: var(--first-color);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -101,8 +101,8 @@ header{
     display: none;
     position: absolute;
     top: 90%;
-    background-color: var(--fifth-color);
-    border: 3px solid var(--fourth-color);
+    background-color: var(--first-color);
+    border: 3px solid var(--second-color);
     border-radius: 2%;
     padding: 0;
     list-style: none;
@@ -118,11 +118,11 @@ header{
     font-family: 'subtitle-font';
     font-weight: bold;
     text-shadow: 1px 1px 10px black;
-    border: 1px solid var(--fourth-color);
+    border: 1px solid var(--second-color);
 }
 
 .submenu li a:hover{
-    border: 1px solid var(--second-color);
+    border: 1px solid var(--fourth-color);
 }
 
 .submenu li a:active{
@@ -154,7 +154,7 @@ header{
 
     .menu-btn{
         display: block;
-        z-index: 11;
+        z-index: 12;
     }
 
     .toggle-menu:checked + .menu-btn{
@@ -167,7 +167,7 @@ header{
     }
     
     .menu-icon{
-        background-image: url(../resources/img/BurgerMenuIcon.png);
+        background-image: url(../../resources/img/BurgerMenuIcon.png);
     }
 
     .head-container{
@@ -194,7 +194,7 @@ header{
         z-index: 10;
         padding-top: 10vh;
         transform: translateX(-100%);
-        background-color: rgba(0, 48, 73, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         border-radius: 4px;
     }
 }

@@ -66,13 +66,13 @@
 5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/products.html)
     * Elaborar tarjetas de columnas y filas utilizando Flexbox.
 
-6. [Varibales y funciones](/Proyecto_Pagina/html/index.html)
+6. [Varibales y funciones](/Proyecto_Pagina/index.html)
     * Aplicar variables y funciones al diseño con CSS.
 
 7. [CSS Grid](Proyecto_Pagina/html/products.html)
     * Emplea CSS Grid en elementos para una mejor disposicion.
 
-8. [Sitio responsivo](Proyecto_Pagina/html/index.html)
+8. [Sitio responsivo](Proyecto_Pagina/index.html)
     * Modificar el sitio para que sea responsivo (resolucion).
 
 9. [Nombre de ejercicio]

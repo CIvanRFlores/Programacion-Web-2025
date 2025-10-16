@@ -36,6 +36,8 @@
 
 * [15: CSS Responsivo](/Clases/15_css_responsivo/index.html)
 
+* [19: Js introduccion](/Clases/19_js_introduccion/index.html)
+
 * Tema N
 
 ## Ejercicios
@@ -75,7 +77,11 @@
 8. [Sitio responsivo](Proyecto_Pagina/index.html)
     * Modificar el sitio para que sea responsivo (resolucion).
 
-9. [Nombre de ejercicio]
+### JavaScript
+
+1. [Calculadora](/JavaScript/Ejercicio_01/index.html)
+    * Crear una calduladora empleando js.
+2. [Nombre de ejercicio]
     * Descripcion de ejercicio
 
 ## Datos del propietario

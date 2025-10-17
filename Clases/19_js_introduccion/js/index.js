@@ -63,3 +63,33 @@ const multiplicar = function(a, b = 2) {
 console.log(sumar(2, 6));
 let resultado = multiplicar; //Se pasa la función
 console.log(resultado);
+
+let nombreCompleto = "Christian Ivan";
+
+console.log(nombreCompleto.toUpperCase());
+console.log(nombreCompleto);
+
+let numeroEntero = 10.230123;
+
+console.log(numeroEntero.toFixed(2));
+console.log(numeroEntero);
+
+let arreglo = [1,2,3,4,5];
+arreglo.push(10);
+console.log(arreglo);
+console.log(arreglo[2]);
+console.log(arreglo.length)
+
+let arreglo2 = arreglo.slice(2, 4);
+console.log(arreglo2);
+
+let pares = arreglo.filter(x => x < 5);
+console.log(pares);
+
+console.log(persona);
+let keys = Object.entries(persona);
+console.log(keys);
+
+Object.seal(persona);
+persona.direccion = "La Paz";
+console.log(persona);

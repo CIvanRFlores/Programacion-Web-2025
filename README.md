@@ -38,6 +38,8 @@
 
 * [19: Js introduccion](/Clases/19_js_introduccion/index.html)
 
+* [20: Js Manipulacion DOM](/Clases/20_js_manipulacion_dom/index.html)
+
 * Tema N
 
 ## Ejercicios

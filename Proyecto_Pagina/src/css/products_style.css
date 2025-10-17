@@ -1,19 +1,19 @@
 input{
-    color: var(--second-color);
     width: 20%;
     padding: 8px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'subtitle-font';
-    border-radius: 8px;
-    border: 3px solid var(--second-color);
+    color: var(--second-color);
     background-color: var(--first-color);
+    border: 3px solid var(--second-color);
+    border-radius: 8px;
 }
 
 input:focus, select:focus{
-    border: 3px solid var(--fourth-color);
-    background: radial-gradient(circle, var(--second-color, var(--first-color)));
     color: var(--first-color);
+    background: radial-gradient(circle, var(--second-color, var(--first-color)));
+    border: 3px solid var(--fourth-color);
 }
 
 input:hover{
@@ -21,17 +21,17 @@ input:hover{
 }
 
 #product-image{
-    background-color: white;
     width: 22vw;
     height: 42vh;
     margin: 5%;
+    background-color: white;
     border-radius: 2%;
 }
 
 .searchbar-modif{
+    display: flex;
     margin-top: 1%;
     margin-right: 2%;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -39,9 +39,9 @@ input:hover{
     width: 53px;
     height: 45px;
     margin-left: 6px;
-    border-radius: 8px;
-    border: 2px solid var(--second-color);
     background-color: var(--first-color);
+    border: 2px solid var(--second-color);
+    border-radius: 8px;
 }
 
 .button-searchbar-modif:hover{
@@ -64,43 +64,43 @@ input:hover{
 
 .card-container
 {
-    color: var(--second-color);
+    padding: 4%;
     font-family: Arial;
+    color: var(--second-color);
     text-align: center;
     background-color: var(--first-color);
     background: radial-gradient(circle, var(--fifth-color), var(--first-color));
     border: 3px solid var(--second-color);
     border-radius: 2%;
-    padding: 4%;
 }
 
 .name-product-modif{
-    font-size: 22px;
     margin: 2%;
+    font-size: 22px;
 }
 
 .price-product-modif{
-    font-size: 18px;
     margin: 4%;
+    font-size: 18px;
 }
 
 .button-design
 {
+    padding: 4%;
+    width: 45%;
     font-size: 22px;
     font-family: Arial;
     font-weight: bold;
-    background-color: var(--first-color);
     color: var(--second-color);
     text-shadow: 1px 1px 5px black;
-    padding: 4%;
-    width: 45%;
-    cursor: pointer;
+    background-color: var(--first-color);
     border: 3px solid var(--second-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .button-design:active{
-    background-color: var(--second-color);
     color: var(--first-color);
     text-shadow: none;
+    background-color: var(--second-color);
 }

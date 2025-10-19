@@ -1,0 +1,108 @@
+:root{
+    --bg-color: white;
+    --border-color: white;
+    --shadow-color: black;
+    --text-color: black;
+}
+
+.bg-red{
+    --text-color: white;
+    --bg-color: red;
+    --shadow-color: red;
+}
+
+.bg-green{
+    --text-color: white;
+    --bg-color: green;
+    --shadow-color: green;
+}
+
+.bg-blue{
+    --text-color: white;
+    --bg-color: blue;
+    --shadow-color: blue;
+}
+
+.bg-normal{
+    --text-color: black;
+    --bg-color: white;
+    --shadow-color: black;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+main{
+    display: grid;
+    position: absolute;
+    top: 31vh;
+    left: 31vw;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px var(--shadow-color);
+}
+
+h1{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+p{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+button{
+    padding: 6%;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-position{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+.btn-red{
+    background-color: red;
+}
+
+.btn-red:hover{
+    background-color: #d10000;
+}
+
+.btn-green{
+    background-color: green;
+}
+
+.btn-green:hover{
+    background-color: #004700;
+}
+
+.btn-blue{
+    background-color: blue;
+}
+
+.btn-blue:hover{
+    background-color: #0300A3;
+}
+
+.btn-restart{
+    color: black;
+    background-color: lightgray;
+}
+
+.btn-restart:hover{
+    background-color: #808080;
+}

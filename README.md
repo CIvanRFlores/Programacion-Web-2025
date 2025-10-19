@@ -26,7 +26,7 @@
 
 * [10: CSS Pseudoclases](/Clases/10_css_pseudoclases/index.html)
 
-* [11: CSS Especificidad](/Clases/11_css_especificidad/index.html)
+* [11: CSS Especificidad](/ClCases/11_css_especificidad/index.html)
 
 * [12: CSS Flexbox](/Clases/12_css_flexbox/index.html)
 
@@ -40,7 +40,7 @@
 
 * [20: Js Manipulacion DOM](/Clases/20_js_manipulacion_dom/index.html)
 
-* Tema N
+* [Tema N]
 
 ## Ejercicios
 
@@ -83,8 +83,11 @@
 
 1. [Calculadora](/JavaScript/Ejercicio_01/index.html)
     * Crear una calduladora empleando js.
-    
-2. [Nombre de ejercicio]
+
+2. [Manipulacion de estilos](/JavaScript/Ejercicio_02/index.html)
+    * Diseña una pagina y emplea funcionalidades con JavaScript y sus selectores.
+
+3. [Nombre de ejercicio]
     * Descripcion de ejercicio
 
 ## Datos del propietario

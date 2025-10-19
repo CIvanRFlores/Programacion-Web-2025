@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cambiar Color de Fondo</h1>
+        <div class="btn-position">
+            <button id="buttonRed" class="btn-red">Rojo</button>
+            <button id="buttonGreen" class="btn-green">Verde</button>
+            <button id="buttonBlue" class="btn-blue">Azul</button>
+            <button id="buttonRestart" class="btn-restart">Restablecer</button>
+        </div>
+        <p>¡Haz click en un boton para cambiar mi color!</p>
+    </main>
+
+    <script>
+        const buttonRed = document.getElementById('buttonRed')
+        buttonRed.addEventListener('click', function(){
+            document.body.className = '';
+            document.body.classList.add('bg-red');
+       })
+
+       const buttonGreen = document.getElementById('buttonGreen')
+        buttonGreen.addEventListener('click', function(){
+            document.body.className = '';
+            document.body.classList.add('bg-green');
+       })
+
+       const buttonBlue = document.getElementById('buttonBlue')
+        buttonBlue.addEventListener('click', function(){
+            document.body.className = '';
+            document.body.classList.add('bg-blue');
+       })
+
+       const buttonRestart = document.getElementById('buttonRestart')
+        buttonRestart.addEventListener('click', function(){
+            document.body.className = '';
+            document.body.classList.add('bg-normal');
+       })
+    </script>
+</body>
+</html>

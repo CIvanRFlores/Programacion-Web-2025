@@ -59,25 +59,18 @@
 
 1. [Formato de texto, fuentes, fondos y border](/Css/Ejercicio_01/index.html)
     * Realizar pagina html empleando elementos decorativos de css.
-
 2. [Tarjeta](/Css/Ejercicio_02/index.html)
     * Realizar una tarjeta empleando propiedades basicas de CSS.
-
 3. [Header sticky](/Css/Ejercicio_03/index.html)
     * Desarrollar un encabezado sticky (sub-menu superior dentro de paginas)
-
 4. [Formulario con estilos, pseudoelementos y pseudoclases](/Css/Ejercicio_04/index.html)
     * Utilizar formularios y darle estilos que combinen con el sitio web.
-
 5. [Sitio con tarjetas (Flex)](/Proyecto_Pagina/html/products.html)
     * Elaborar tarjetas de columnas y filas utilizando Flexbox.
-
 6. [Varibales y funciones](/Proyecto_Pagina/index.html)
     * Aplicar variables y funciones al diseño con CSS.
-
 7. [CSS Grid](Proyecto_Pagina/html/products.html)
     * Emplea CSS Grid en elementos para una mejor disposicion.
-
 8. [Sitio responsivo](Proyecto_Pagina/index.html)
     * Modificar el sitio para que sea responsivo (resolucion).
 
@@ -85,10 +78,8 @@
 
 1. [Calculadora](/JavaScript/Ejercicio_01/index.html)
     * Crear una calduladora empleando js.
-
 2. [Manipulacion de estilos](/JavaScript/Ejercicio_02/index.html)
     * Diseña una pagina y emplea funcionalidades con JavaScript y sus selectores.
-
 3. [Nombre de ejercicio]
     * Descripcion de ejercicio
 

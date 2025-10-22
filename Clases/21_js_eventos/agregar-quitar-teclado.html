@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de teclado y agregar y quitar del DOM</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            max-width: 60%;
+            margin: auto;
+        }
+
+        .caja {
+            width: 80px;
+            height: 80px;
+            background-color: lightblue;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .caja:hover {
+            transform: scale(1.1);
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .coral {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo: Agregar y eliminar elementos con teclado</h2>
+    <p>Presiona <b>Ctrl + A</b> para agregar una caja, <b>Alt + E</b> para eliminar la última.</p>
+
+    <div id="contenedor"></div>
+    <script>
+        const contenedor = document.getElementById('contenedor');
+        let contador = 1;
+
+        function agregarCaja() {
+            const caja = document.createElement('div');
+            caja.classList.add('caja');
+            caja.classList.add('blue');
+            caja.textContent = contador++;
+
+            caja.addEventListener('click', function() {
+                asignarClases(this);
+            });
+
+            contenedor.appendChild(caja);
+        }
+
+        function asignarClases(caja) {
+            caja.classList.toggle('blue');
+            caja.classList.toggle('coral');   
+        }
+
+
+        function eliminarCaja() {
+            const ultima = contenedor.lastElementChild;
+            if(ultima) {
+                contenedor.removeChild(ultima);
+                contador--;
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if(e.ctrlKey && e.key.toLowerCase() === 'a') {
+                e.preventDefault();
+                agregarCaja();
+            }else if(e.altKey && e.key.toLowerCase() === 'e') {
+                e.preventDefault();
+                eliminarCaja();
+            }
+        });
+    </script>
+</body>
+</html>

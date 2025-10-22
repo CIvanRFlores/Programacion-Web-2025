@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color con dataset</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="red" data-color="red" data-user-id="123">Rojo</button>
+        <button class="green" data-color="green">Verde</button>
+        <button class="blue" data-color="blue">Azul</button>
+        <button class="reset" data-color="reset">Restablecer</button>
+    </div>
+    <script>
+        const botones = document.querySelectorAll('button');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', function () {
+                const color = this.dataset.color;
+                document.body.style.backgroundColor = (color === 'reset') ? 'white' : color;
+            })
+        })
+    </script>
+</body>
+</html>

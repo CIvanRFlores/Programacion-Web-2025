@@ -40,6 +40,8 @@
 
 * [20: Js Manipulacion DOM](/Clases/20_js_manipulacion_dom/index.html)
 
+* [21: Js Eventos](/Clases/21_js_eventos/index.html)
+
 * [Tema N]
 
 ## Ejercicios

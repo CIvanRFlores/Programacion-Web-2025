@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div id="calculator" class="calculator-body">
+            <input id="screen" class="calculator-display" value="|" disabled>
+            <div class="calculator-btns">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>/</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>*</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+                <button>0</button>
+                <button>=</button>
+                <button>C</button>
+                <button>+</button>
+            </div>
+        </div>
+        <div class="record-body">
+            <h3 style="cursor: default;">| Historial |</h3>
+            <div id="list">
+                <textarea name="list" id="record" rows="28" cols="50" readonly style="cursor: default;"></textarea>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        let keys = document.querySelectorAll('button');
+        let screen = document.getElementById('screen');
+        let screenOp = '';
+        let record = document.getElementById('record');
+
+        let number1, number2;
+        let operational;
+        let result;
+
+        keys.forEach(key =>{
+            
+            key.addEventListener('click', function(){
+                let op = this.textContent;
+
+                if(op === 'C'){
+                    screenOp = '';
+                    screen.value = '|';
+                    number1 = null; 
+                    number2 = null;
+                    operational = null;
+                    result = null;
+                    return;
+                }
+                else if(op === '='){
+                    [number1, number2] = screenOp.split(operational);
+                    number1 = Number.parseInt(number1);
+                    number2 = Number.parseInt(number2);
+
+                    if(number1 > 0 && isNaN(number2)){
+                        result = number1;
+                    }
+                    else if(isNaN(number1) && number2 > 0){
+                        result = number2
+                    }
+                    else{
+                        switch(operational){
+                            case '+' : 
+                                result = number1 + number2;
+                                screen.value = result;
+                                record.value += "\n" + screenOp + " = " + result;
+                                operational = null, number1 = result, number2 = null, screenOp = '';
+                                screenOp += result;
+                                break;
+                            case '-' : 
+                                result = number1 - number2;
+                                screen.value = result;
+                                record.value += "\n" + screenOp + " = " + result;
+                                operational = null, number1 = result, number2 = null, screenOp = '';
+                                screenOp += result;
+                                break;
+                            case '*' : 
+                                result = number1 * number2;
+                                screen.value = result;
+                                record.value += "\n" + screenOp + " = " + result;
+                                operational = null, number1 = result, number2 = null, screenOp = '';
+                                screenOp += result;
+                                break;
+                            case '/' : 
+                                if(number1 === 0 || number2 === 0){
+                                    screen.value = 'Error';
+                                    operational = null, number1 = null, number2 = null, screenOp = '';
+                                    break;
+                                }
+                                else{
+                                    result = number1 / number2;
+                                    screen.value = result;
+                                    record.value += "\n" + screenOp + " = " + result;
+                                    operational = null, number1 = result, number2 = null, screenOp = '';
+                                    screenOp += result;
+                                }
+                                break;
+                        }
+                    }
+                }
+                else{
+                    if(isNaN(Number(op))){                        
+                        operational = op;
+                    }
+                    screenOp += op;
+                    screen.value = screenOp;
+                    screen.scrollLeft = screen.scrollWidth;
+                }
+            })
+
+        })
+        
+        document.addEventListener('keydown', function(e){
+
+            if(e.key === 'Backspace'){
+                    screenOp = '';
+                    screen.value = '|';
+                    number1 = null; 
+                    number2 = null;
+                    operational = null;
+                    result = null;
+                    return;
+                }
+            else if(e.key === 'Enter'){
+                [number1, number2] = screenOp.split(operational);
+                number1 = Number.parseInt(number1);
+                number2 = Number.parseInt(number2);
+
+                if(number1 > 0 && isNaN(number2)){
+                    result = number1;
+                }
+                else if(isNaN(number1) && number2 > 0){
+                    result = number2
+                }
+                else{
+                    switch(operational){
+                        case '+' : 
+                            result = number1 + number2;
+                            screen.value = result;
+                            record.value += "\n" + screenOp + " = " + result + number1 + operational + number2;
+                            operational = null, number1 = result, number2 = null, screenOp = '';
+                            screenOp += result;
+                            break;
+                        case '-' : 
+                            result = number1 - number2;
+                            screen.value = result;
+                            record.value += "\n" + screenOp + " = " + result;
+                            operational = null, number1 = result, number2 = null, screenOp = '';
+                            screenOp += result;
+                            break;
+                        case '*' : 
+                            result = number1 * number2;
+                            screen.value = result;
+                            record.value += "\n" + screenOp + " = " + result;
+                            operational = null, number1 = result, number2 = null, screenOp = '';
+                            screenOp += result;
+                            break;
+                        case '/' : 
+                            if(number1 === 0 || number2 === 0){
+                                screen.value = 'Error';
+                                operational = null, number1 = null, number2 = null, screenOp = '';
+                                break;
+                            }
+                            else{
+                                result = number1 / number2;
+                                screen.value = result;
+                                record.value += "\n" + screenOp + " = " + result;
+                                operational = null, number1 = result, number2 = null, screenOp = '';
+                                screenOp += result;
+                            }
+                            break;
+                    }
+
+                    console.log(operational);
+                }
+            }
+
+            else{
+                if(e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/'){
+                    operational = e.key;
+                    screenOp += e.key;
+                    screen.value = screenOp;
+                    screen.scrollLeft = screen.scrollWidth;
+                }
+                else if(!isNaN(e.key)){
+                    screenOp += e.key;
+                    screen.value = screenOp;
+                    screen.scrollLeft = screen.scrollWidth;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

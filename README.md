@@ -80,7 +80,9 @@
     * Crear una calduladora empleando js.
 2. [Manipulacion de estilos](/JavaScript/Ejercicio_02/index.html)
     * Diseña una pagina y emplea funcionalidades con JavaScript y sus selectores.
-3. [Nombre de ejercicio]
+3. [Calculadora visual](/JavaScript/Ejercicio_03/index.html)
+    * Diseña una calculadora y dale funcion por medio de javascript.
+4. [Nombre de ejercicio]
     * Descripcion de ejercicio
 
 ## Datos del propietario

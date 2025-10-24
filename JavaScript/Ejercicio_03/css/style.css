@@ -1,0 +1,73 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 3%;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace
+}
+
+input{
+    width: 10px;
+    color: black;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    font-size: 200%;
+    color: white;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    border: white solid 4px;
+}
+
+button:active{
+    background-color: #0F0F0F;
+    border: #1C1C1C solid 4px;
+}
+
+div h3{
+    margin-top: 3%;
+}
+
+.calculator-body{
+    width: 30vw;
+    height: 110%;
+    border: #696969 solid 4px;
+    background: radial-gradient(circle, #CFCFCF, #A6A6A6);
+    border-radius: 10px;
+}
+
+.calculator-display{
+    width: 78%;
+    margin: 10%;
+    padding-left: 2%;
+    border: #313B26 solid 3px;
+    text-align: left;
+    font-size: 320%;
+    background-color: #54663F;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.calculator-btns{
+    display: grid;
+    grid-template-columns: repeat(4, 10%);
+    gap: 12%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.record-body{
+    width: 30vw;
+    height: 110%;
+    border: #696969 solid 4px;
+    font-size: 30px;
+    background: radial-gradient(circle, #CFCFCF, #A6A6A6);
+    border-radius: 10px;
+}

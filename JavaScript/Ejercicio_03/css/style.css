@@ -35,6 +35,12 @@ div h3{
     margin-top: 3%;
 }
 
+div textarea{
+    width: 80%;
+    font-size: 55%;
+    padding-left: 5%;
+}
+
 .calculator-body{
     width: 30vw;
     height: 110%;

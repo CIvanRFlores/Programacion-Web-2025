@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="list-body">
+            <h2>Lista de tareas</h2>
+            <div class="homework-ubication">
+                <ul id="list" class="list-design"></ul>
+            </div>
+            <div class="input-ubication">
+                <input id="homework-input" class="input-design" type="text" placeholder="Ingresar tarea...">
+                <button id="add-button" >Añadir</button>
+                <button id="delete-all" >Eliminar todo</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        let homework = document.getElementById('homework-input');
+        let addHW = document.getElementById('add-button');
+        let list = document.getElementById('list');
+        let deleteAll = document.getElementById('delete-all')
+
+        let homeworks = [];
+
+        function insertHomework(){
+            let DescHW = homework.value;
+
+            const newHW = document.createElement('li');
+
+            const inputHW = document.createElement('input');
+            inputHW.type = 'checkbox';
+            inputHW.classList.add('checkbox-size');
+            inputHW.addEventListener('change', function(e){
+                if(inputHW.checked){
+                    labelHW.classList.add('homework-complete');
+                }
+                else{
+                    labelHW.classList.remove('homework-complete');
+                }
+
+            })
+
+            const labelHW = document.createElement('label');
+            labelHW.textContent = DescHW;
+
+            const deleteHW = document.createElement('button');
+            deleteHW.textContent = 'Eliminar';
+            deleteHW.addEventListener('click', function(){
+                newHW.remove();
+                division.remove();
+                homeworks = homeworks.filter(hw => hw != DescHW);
+                localStorage.setItem('homeworks', JSON.stringify(homeworks));
+            })
+
+            newHW.append(inputHW, labelHW, deleteHW);
+            newHW.classList = 'homework-design'
+
+            const division = document.createElement('hr');
+
+            list.appendChild(newHW);
+            list.appendChild(division);
+
+            homeworks.push(DescHW);
+            localStorage.setItem('homeworks', JSON.stringify(homeworks));
+
+            homework.value = '';
+        }
+        
+        addHW.addEventListener('click', function(){
+            if(homework.value != ''){
+                insertHomework();
+            }
+            else{
+                alert("Ingrese una descripcion a la tarea")
+            }
+
+        })
+        
+        homework.addEventListener('keydown', function(e){
+            if(e.key === 'Enter'){
+                if(homework.value != '' && document.activeElement === homework){
+                    insertHomework();
+                }
+                else{
+                    alert("Ingrese una descripcion a la tarea");
+                }
+            }
+        })
+
+        deleteAll.addEventListener('click', function(){
+            if(list.children.length != 0){
+                list.innerHTML = '';
+
+                homeworks = [];
+                localStorage.setItem('homeworks', JSON.stringify(homeworks));
+            }
+            else{
+                alert('La lista se encuentra vacia');
+            }
+        })
+
+        const saveList = JSON.parse(localStorage.getItem('homeworks'));
+        saveList.forEach(hw => {
+            homework.value = hw;
+            insertHomework();                
+        });
+    </script>
+</body>
+</html>

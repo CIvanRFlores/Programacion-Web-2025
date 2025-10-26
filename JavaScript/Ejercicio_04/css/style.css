@@ -1,0 +1,84 @@
+html{
+    overscroll-behavior: none;
+}
+
+hr{
+    border:1px solid white;
+}
+
+body{
+    background-image: url(../img/bg.gif);
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+}
+
+button{
+    background-color: white;
+    margin-right: 8px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+
+button:active{
+    background-color: darkgray;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.list-body{
+    background-color: #eba17c;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 45vw;
+    text-align: center;
+    border: black solid 3px;
+    border-radius: 6px;
+}
+
+.list-design{
+    max-height: 50vh;
+    padding: 0;
+}
+
+.homework-ubication{
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+    flex: 1;
+    overflow-y: scroll;
+}   
+
+.input-ubication{
+    margin: 5%;
+}
+
+.homework-design{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    text-align: left;
+    gap: 7%;
+}
+
+.checkbox-size{
+    margin-left: 8px;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.homework-complete{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.input-design{
+    border-radius: 6px;
+    font-size: 100%;
+}

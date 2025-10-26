@@ -82,8 +82,8 @@
     * Diseña una pagina y emplea funcionalidades con JavaScript y sus selectores.
 3. [Calculadora visual](/JavaScript/Ejercicio_03/index.html)
     * Diseña una calculadora y dale funcion por medio de javascript.
-4. [Nombre de ejercicio]
-    * Descripcion de ejercicio
+4. [Lista de tareas](/JavaScript/Ejercicio_04/index.html)
+    * Diseñar una lista de tareas empleando JavaScript.
 
 ## Datos del propietario
 

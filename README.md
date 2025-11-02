@@ -89,6 +89,11 @@
 4. [Lista de tareas](/JavaScript/Ejercicio_04/index.html)
     * Diseñar una lista de tareas empleando JavaScript.
 
+5. [Modules](/JavaScript/Ejercicio_04/index.html)
+    * Emplear modulos para acomodar scripts js.
+
+6. [Titulo de la tarea]
+
 ## Datos del propietario
 
 |Alumno|Carrera|Semestre|Materia|

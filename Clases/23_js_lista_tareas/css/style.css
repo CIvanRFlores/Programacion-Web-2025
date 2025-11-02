@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.container {
+    border: 1px lightgray solid;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px lightgray;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tareas {
+    margin-top: auto;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    border: 1px solid rgb(81, 133, 135);
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eliminar {
+    background-color: crimson;
+    border-color: rgb(194, 20, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eliminar:hover {
+    background-color: rgb(193, 10, 47);
+    transition: background-color .4s;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-around;
+}

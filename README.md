@@ -42,6 +42,10 @@
 
 * [21: Js Eventos](/Clases/21_js_eventos/index.html)
 
+* [22: Js Calculadora](/Clases/22_js_calculadora/index.html)
+
+* [23: Js Lista de tareas](/Clases/23_js_lista_tareas/index.html)
+
 * [Tema N]
 
 ## Ejercicios

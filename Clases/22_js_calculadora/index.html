@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" placeholder="0" disabled>
+        <div class="buttons-container">
+            <button onclick="agregarValor('7')">7</button>
+            <button onclick="agregarValor('8')">8</button>
+            <button onclick="agregarValor('9')">9</button>
+            <button onclick="agregarValor('/')">/</button>
+            <button onclick="agregarValor('4')">4</button>
+            <button onclick="agregarValor('5')">5</button>
+            <button onclick="agregarValor('6')">6</button>
+            <button onclick="agregarValor('*')">*</button>
+            <button onclick="agregarValor('1')">1</button>
+            <button onclick="agregarValor('2')">2</button>
+            <button onclick="agregarValor('3')">3</button>
+            <button onclick="agregarValor('-')">-</button>
+            <button onclick="agregarValor('0')">0</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="limpiar()">C</button>
+            <button onclick="agregarValor('+')">+</button>
+        </div>
+    </div>
+
+    <div class="historial">
+        <h3>Historial de cálculos</h3>
+        <ul id="lista-historial">
+
+        </ul>
+        <button class="clear-history" onclick="limpiarHistorial()">Limpiar historial</button>
+    </div>
+    <script>
+        let operacion = '';
+        const pantalla = document.getElementById('pantalla');
+        const listaHistorial = document.getElementById('lista-historial');
+        let historial = [];
+
+        function agregarValor(caracter) {
+            operacion+=caracter;
+            pantalla.value = operacion;
+        }
+
+        function limpiar() {
+            operacion = '';
+            pantalla.value = '';
+        }
+
+        function calcular() {
+            try {
+                let resultado = eval(operacion);
+                pantalla.value = resultado;
+                guardarEnHistorial(operacion + " = " + resultado);
+                operacion = resultado;
+            }catch(error) {
+                pantalla.value = "ERROR";
+                operacion = '';
+            }
+        }
+
+        document.addEventListener('keydown', (event) => {
+            const tecla = event.key;
+            if(!isNaN(tecla) || ['+', '/', '-', '*'].includes(tecla)){
+                agregarValor(tecla);
+            }else if(tecla === 'Enter') {
+                calcular();
+            }else if(tecla === 'Escape') {
+                limpiar();
+            }
+        })
+
+        function agregarOperacionALista(operacion) {
+            const li = document.createElement('li');
+            li.textContent = operacion;
+            listaHistorial.prepend(li);
+        }
+
+        function guardarEnHistorial(operacionConResultado) {
+            historial.push(operacionConResultado);
+            agregarOperacionALista(operacionConResultado);
+            localStorage.setItem('historial', JSON.stringify(historial));
+        }
+
+        function actualizarHistorial() {
+            historial = JSON.parse(localStorage.getItem('historial'));
+            console.log(historial);
+            if(historial == null) {
+                historial = [];
+            }
+            listaHistorial.innerHTML = '';
+            historial.forEach(elemento => {
+                agregarOperacionALista(elemento);
+            });
+        }
+
+        function limpiarHistorial() {
+            //localStorage.clear();
+            localStorage.removeItem('historial');
+            actualizarHistorial();
+        }
+
+        window.onload = function() {
+            actualizarHistorial();
+        }
+    </script>
+</body>
+
+</html>

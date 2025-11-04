@@ -46,6 +46,8 @@
 
 * [23: Js Lista de tareas](/Clases/23_js_lista_tareas/index.html)
 
+* [24: Js Asincrono](/Clases/24_js_asincrono/index.html)
+
 * [Tema N]
 
 ## Ejercicios

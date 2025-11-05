@@ -92,7 +92,10 @@
     * Diseñar una lista de tareas empleando JavaScript.
 5. [Modules](/JavaScript/Ejercicio_04/index.html)
     * Emplear modulos para acomodar scripts js.
-6. [Titulo de la tarea]
+6. [Tarjeta con datos base de un gato](/Clases/24_js_asincrono/index.html)
+    * Emplear API de gatos.
+7. [Titulo de la tarea]
+    * Descripcion de la tarea.
 
 ## Datos del propietario
 

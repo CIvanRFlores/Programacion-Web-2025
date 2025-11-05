@@ -1,6 +1,6 @@
 const options = {
     headers: {
-        'x-api-key': 'live_9xAXeOySuZF12pqsDZzqNZy3lMzRgjHdcdFDViMWLt5kIahrWeNrkjQZ5QwzVkWA'
+        'x-api-key': 'live_0kqltMyNhSkS4PELqxkN7VM3WYNFaWeY0ALmS5Ym96NXJD70AO8M1TOa8Th5qCgL'
     }
 }
 
@@ -26,4 +26,19 @@ export async function getBreeds(page, limit){
     }catch (error) {
         console.error(error);
     }
+}
+
+export async function getBreed(id){
+    const idApi = `https://api.thecatapi.com/v1/images/${id}`;
+
+    try {
+    const response = await fetch(idApi);
+    if(!response.ok){
+        throw new Error("Error " + response.status);
+    }
+    return {
+        cat: await response.json(),};
+}catch (error) {
+    console.error(error);
+}
 }

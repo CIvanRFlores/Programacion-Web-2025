@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cat Information</title>
+    <link rel="stylesheet" href="./css/details.css">
 </head>
 <body>
-    <h1>Detalles del gato</h1>
-    <script>
+    <h1 style="text-align: center;">Information</h1>
 
-        //Se obtiene el id de la raza por medio de la URL
-        const breedId = new URLSearchParams(window.location.search).get('id');
-        console.log(breedId);
-        
-    </script>
+    <div id="catContent" style="padding-left: 25%;">
+
+    </div>
+
+    <script type="module" src="./js/details.js"></script>
 </body>
 </html>

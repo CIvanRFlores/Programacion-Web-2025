@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #9fcefd;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -10,7 +10,11 @@ body {
 }
 
 h1 {
-    color: #3a3a3a;
+    padding: 1%;
+    background-color: white;
+    border: solid 4px rgb(0, 98, 196);
+    border-radius: 5px;
+    color: rgb(0, 98, 196);
     margin-bottom: 20px;
 }
 
@@ -20,6 +24,10 @@ h1 {
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+}
+
+#catGrid a:hover{
+    background-color: rgb(0, 98, 196);
 }
 
 .cat-card {
@@ -50,7 +58,9 @@ h1 {
 .pagination {
     margin-top: 20px;
     display: flex;
+    white-space: nowrap;
     gap: 10px;
+    align-items: center;
 }
 
 button {
@@ -61,6 +71,10 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+}
+
+button:hover{
+    background-color: #3be641;
 }
 
 button:disabled {
@@ -102,4 +116,23 @@ button:disabled {
 
 .cat-details h1 {
     margin-top: 0;
+}
+
+.page-number{
+    padding: 3%;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 98, 196);
+    border: solid 2px rgb(0, 98, 196);
+    border-radius: 5px;
+}
+
+.quantiy-button{
+    background-color: #219c80;
+}
+
+.quantiy-button:hover{
+    background-color: #0e5847;
 }

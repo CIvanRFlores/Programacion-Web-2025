@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD con The Cat API</title>
+    <title>CRUD with The Cat API</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Galería de Razas de Gatos</h1>
+    <h1>Cat's Gallery</h1>
     <div id="catGrid"></div>
 
     <div class="pagination">
-        <button id="prevPage" disabled>Anterior</button>
-        <button id="nextPage">Siguiente</button>
+        <button id = "quantity" class="quantiy-button"></button>
+        <button id="prevPage" disabled>Prev</button>
+        <button id="nextPage">Next</button>
+        <p id="pageNumber" class="page-number"></p>
     </div>
 
     <script type="module" src="./js/main.js"></script>
